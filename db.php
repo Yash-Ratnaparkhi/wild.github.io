@@ -13,7 +13,7 @@ $con= new mysqli($serverhost,$username,$password,$database);
 	$sql= "INSERT INTO `wild` VALUES ('$Name','$Email','$Password')";
 	if ($con->query($sql)===TRUE) {
 		echo "inserted";
-		header("Location: webpage1.php");
+		header("Location: index.html");
 	}
 	else
 	{
